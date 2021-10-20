@@ -1,0 +1,122 @@
+.galeri{
+  margin: 20px 10% 20px 10%;
+  background-color:white;
+}
+
+.title{
+  color: black;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.content{
+  display: flex;
+  padding-bottom: 50px;
+}
+
+.gambar{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.gambar img{
+  width: 500px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.deskripsi{
+  padding: 15px;
+  font-family: sans-serif;
+  color: black;
+  font-size: 17px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .galeri{
+    display: block;
+    width:100%;
+    margin: 0px;
+  }
+  .gambar img{
+    width: 250px;
+    height: 300px;
+  }
+  .deskripsi{
+    width: 100%;
+  }
+  .deskripsi{
+    font-size: 80%;
+  }
+}
+
+@media only screen and (max-width: 801px) {
+  .galeri{
+    display: block;
+    width:100%;
+    margin: 0px;
+  }
+  .gambar img{
+    width: 250px;
+    height: 300px;
+  }
+  .deskripsi{
+    width: 100%;
+  }
+  .deskripsi{
+    font-size: 80%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .galeri{
+    display: block;
+    width:100%;
+    margin: 0px;
+  }
+  .gambar img{
+    width: 200px;
+    height: 300px;
+  }
+  .deskripsi{
+    width: 100%;
+  }
+  .deskripsi{
+    font-size: 80%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .galeri{
+    display: block;
+    width:100%;
+    margin: 0px;
+  }
+  .gambar img{
+    width: 150px;
+    height: 300px;
+  }
+  .deskripsi{
+    width: 100%;
+  }
+  .deskripsi{
+    font-size: 80%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .galeri{
+    display: block;
+    width:100%;
+    margin: 0px;
+  }
+  .gambar img{
+    width: 150px;
+    height: 300px;
+  }
+  .deskripsi{
+    width: 100%;
+  }
+  .deskripsi{
+    font-size: 80%;
+  }
+}

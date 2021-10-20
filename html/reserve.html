@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ybike</title>
+
+    <link rel="stylesheet" href="../css/headerfooter.css">
+    <link rel="stylesheet" href="../css/reserve.css">
+    <script src="../js/reserve.js" async></script>
+</head>
+
+<body>
+    <div class="header">
+
+        <div class="navigation">
+            <div class="logo">
+                <img src="../asset/logoYbike2.png" alt="logoYbike2">
+            </div>
+    
+            <div class="nav">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="reserve">
+            <ul>
+                <li><a href="reserve.html">Reserve</a></li>
+            </ul>
+        </div>
+
+        <div class="toggle">
+            <a href="#"><img src="../asset/toggle.png" alt="toggle"></a>
+            
+            <div class="dropdown-content">
+                <a href="home.html">Home</a>
+                <a href="product.html">Products</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="aboutus.html">About Us</a>
+                <a href="reserve.html">Reserve</a>
+            </div>
+        </div>
+
+    </div>
+    
+    <div class="container">
+        <div class="explaination">
+            <h4>Reserve Rules</h4>
+            <p>To reserve our bike, you need to follow our rules!</p>
+            <p>First, You only can choose one type product anything you want</p>
+            <p>Second, You can choose one color</p>
+            <p>Third, You only can pay with Debit card or Credit card</p>
+            <p>Fourth, You need to insert the reserve form to complete the payment</p>
+            <h5>Enjoy Shopping!</h5>
+        </div>
+
+        <form action="" id="form" method="POST">
+            <h2>Reserve</h2>
+            <div class="input-div">
+                <label for="name" class="label">Name</label>
+                <input type="text" name="name" id="name" placeholder="Example (Adryan Sucipto)">
+            </div>
+            <div class="input-div">
+                <label for="email" class="label">Email</label>
+                <input type="text" name="email" id="email" placeholder="Example (Adryan.Sucipto@gmail.com)">
+            </div>
+            <div class="input-div">
+                <label for="telephone" class="label">Telephone</label>
+                <input type="tel" name="telephone" id="telephone" placeholder="Example (08126600222)">
+            </div>
+            <div class="input-div">
+                <label for="address" class="label">Address</label>
+                <textarea id="address" placeholder="Example (Jalan. 'yourstreet')"></textarea>
+            </div>
+            
+            <div class="input-div">
+                <label for="bike" class="label">Product</label>
+                <select id="country" name="bike">
+                    <option value="zx25r">ZX25R - Kawasako</option>
+                    <option value="zx10r">ZX10R - Kawasako</option>
+                    <option value="h2">H2 - Kawasako</option>
+                    <option value="zx6r">ZX6R - Kawasako</option>
+                    <option value="h2">Vixian - Vixian</option>
+                </select>
+            </div>
+
+            <div class="input-div">
+                <label for="quantity" class="label">Quantity</label>
+                <input type="number" name="quantity" id="quantity" min="1" value="1">
+            </div>  
+
+            <div class="input-div">
+                <label for="color" class="label">Color</label>
+                <div class="radio">
+                    <input type="radio" name="color" id="red">
+                    <label for="color">Red</label>
+                    <input type="radio" name="color" id="blue">
+                    <label for="color">Blue</label>
+                    <input type="radio" name="color" id="black">
+                    <label for="color">Black</label>
+                </div>
+            </div>
+
+            <div class="input-div" class="label">
+                <label for="pay" class="label">Payment</label>
+                <div class="radio">
+                    <input type="radio" name="pay" id="debit">
+                    <label for="pay">Debit</label>
+                    <input type="radio" name="pay" id="credit">
+                    <label for="pay">Credit</label>
+                </div>
+            </div>
+
+            <div class="input-div" class="label">
+                <label for="aggrement" class="label">Aggrement</label>
+                <div class="radio">
+                    <input type="checkbox" name="agreement" id="aggrement">
+                    <label for="aggrement">I agree for the terms and conditions</label>
+                </div>
+            </div>
+            <button type="submit">Reserve</button>
+
+            <div id="error"></div>
+        </form>
+    </div>
+
+
+    <div class="footer">
+
+        <div class="footer1">
+            <div class="logo">
+                <img src="../asset/logoYbike2.png" alt="logoYbike2" id="logoYbike2"> 
+            </div>
+            <div class="contents">
+                <div class="content1">
+                    <p>Contact us - Help Center(01234567891)</p>
+                    <a href="aboutus.html">About Us</a>
+                    <a href="product.html">Products</a>
+                </div>
+
+                <div class="content2">
+                    <div class="text">
+                        <h2>Follow Us</h2>
+                        <p>You can follow us to get the latest information</p>
+                    </div>
+
+                    <div class="logo">
+                        <div class="card">
+                            <a href="https://www.facebook.com/"><img src="../asset/fb.png" alt="fb"></a>
+                            <a href="https://www.facebook.com/">Facebook</a>
+                        </div>
+                        <div class="card">
+                            <a href="https://www.instagram.com/"><img src="../asset/ig.png" alt="ig"></a>
+                            <a href="https://www.instagram.com/">Instagram</a>
+                        </div>
+                        <div class="card">
+                            <a href="https://twitter.com/"><img src="../asset/twitter.png" alt="twitter"></a>
+                            <a href="https://twitter.com/">Twitter</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content3">
+                    <h3>YBIKE by Carvin Joestar</h3>
+                    <p>Jl Palmerah No.15, Jakarta Barat, Indonesia</p>
+                    <p>Jakarta 14350 Indonesia</p>
+                    <p>PhoneNumber - 01234567891</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer2">
+            <p>Copyright &copy; 2021 - YBIKE All Rights Reserved</p>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,389 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI'; 
+    box-sizing: content-box;
+}
+
+body{
+    background: white;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    font-size: 17px;
+    background-color: #333333;
+}
+
+.header .navigation{
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+}
+
+.header .navigation .logo{
+    display: flex;
+}
+
+.header .navigation .nav{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.header .navigation .nav ul{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.header .navigation .nav ul li{
+    display: flex;
+    padding: 25px;
+}
+
+.header .navigation .nav ul li a{
+    display: flex;
+    text-decoration: none;
+    color: white;
+}
+
+.header .reserve{
+    display: flex;
+    align-items: center;
+    padding-right: 25px;
+}
+
+.header .reserve ul{
+    display: flex;
+    padding: 10px;
+    border: 2px;
+    border-radius: 5px;
+    list-style-type: none;
+    background-color: #f88702;
+}
+
+.header .reserve ul:hover{
+    display: flex;
+    padding: 10px;
+    border: 2px;
+    border-radius: 5px;
+    list-style-type: none;
+    background-color: grey;
+}
+
+.header .reserve ul li a{
+    display: flex;
+    text-decoration: none;
+    color: white;
+}
+
+.logo img{
+    width: 100px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .footer1{
+    display: flex;
+    flex-direction: column;
+    background: #282828;
+    padding: 20px 80px 30px 80px; 
+}
+
+#logoYbike2{
+    padding-left: 15%;
+}
+
+.footer .footer1 .contents{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+}
+
+.footer .footer1 .contents .content1{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+
+.footer .footer1 .contents .content1 a{
+    color: white;
+    text-decoration: none;
+    border-top: 1px solid white;
+    padding: 10px 0px;
+}
+
+.footer .footer1 .contents .content1 a:hover{
+    color: #f88702;
+}
+
+.footer .footer1 .contents .content1 p{
+    color: white;
+    padding: 10px 0px;
+}
+
+.footer .footer1 .contents .content2{
+    display: flex;
+    flex-direction: column;
+    border: 2px;
+    border-radius: 10px;
+    color: white;
+    width: 20%;
+    padding: 5%;
+    background: #202020;
+}
+
+.footer .footer1 .contents .content2 .logo{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .footer1 .contents .content2 .text{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .footer1 .contents .content2 .text p{
+    color: #959799;
+    padding: 10px 0px;
+}
+
+.footer .footer1 .contents .content2 .logo .card{
+    display: flex;
+    padding: 10px 0px;
+    gap: 10px;
+    align-items: center;
+}
+
+.footer .footer1 .contents .content2 .logo .card a{
+    color: white;
+    text-decoration: none;
+}
+
+.footer .footer1 .contents .content2 .logo .card a:hover{
+    color: #f88702;
+}
+
+.footer .footer1 .contents .content2 .logo .card a img{
+    width: 35px;
+}
+
+.footer .footer1 .contents .content3{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.footer .footer1 .contents .content3 h3{
+    color: white;
+    padding: 5px 0px;
+}
+
+.footer .footer1 .contents .content3 p{
+    padding: 5px 0px;
+    color: #959799;
+}
+
+
+.footer .footer2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 0px;
+    color: #a3a3a3;
+    background: #353535;
+}
+
+.toggle{
+    position: absolute;
+    cursor: pointer;
+    display: none;
+    right: 10px;
+}
+
+.toggle a img{
+    width: 100%;
+}
+
+.header .toggle:hover .dropdown-content{
+    display: block;
+}
+
+.header .dropdown-content{
+    position: absolute;
+    background: grey;
+    display: none;
+    z-index: 999;
+}
+
+.header .toggle:hover .dropdown-content a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+.header .toggle:hover .dropdown-content a:hover{
+    color: #f88702;
+    text-decoration: none;
+    display: block;
+}
+
+@media only screen and (max-width: 1024px) {
+    .header .navigation .nav{
+        display: none;
+    }
+
+    .header .reserve{
+        display: none;
+    }
+
+    .toggle{
+        display: block;
+    }
+
+    .footer{
+        font-size: 60%;
+    }
+
+    .footer .footer1{
+        display: flex;
+        flex-direction: column;
+        background: #282828;
+        padding: 20px 0px 30px 0px; 
+    }
+
+    #logoYbike2{
+        padding-left: 0;
+    }
+  }
+  
+
+@media only screen and (max-width: 801px){
+    .header .navigation .nav{
+        display: none;
+    }
+
+    .header .reserve{
+        display: none;
+    }
+
+    .toggle{
+        display: block;
+    }
+
+    .footer{
+        font-size: 60%;
+    }
+
+    .footer .footer1{
+        display: flex;
+        flex-direction: column;
+        background: #282828;
+        padding: 20px 0px 30px 0px; 
+    }
+
+    #logoYbike2{
+        padding-left: 0;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .header .navigation .nav{
+        display: none;
+    }
+
+    .header .reserve{
+        display: none;
+    }
+
+    .toggle{
+        display: block;
+    }
+
+    .footer{
+        font-size: 60%;
+    }
+
+    .footer .footer1{
+        display: flex;
+        flex-direction: column;
+        background: #282828;
+        padding: 20px 0px 30px 0px; 
+    }
+
+    #logoYbike2{
+        padding-left: 0;
+    }
+}
+
+
+@media only screen and (max-width: 500px){
+    .header .navigation .nav{
+        display: none;
+    }
+
+    .header .reserve{
+        display: none;
+    }
+
+    .toggle{
+        display: block;
+    }
+
+    .footer{
+        font-size: 60%;
+    }
+
+    .footer .footer1{
+        display: flex;
+        flex-direction: column;
+        background: #282828;
+        padding: 20px 0px 30px 0px; 
+    }
+
+    #logoYbike2{
+        padding-left: 0;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    .header .navigation .nav{
+        display: none;
+    }
+
+    .header .reserve{
+        display: none;
+    }
+
+    .toggle{
+        display: block;
+    }
+
+    .footer{
+        font-size: 7px;
+    }
+
+    .footer .footer1{
+        display: flex;
+        flex-direction: column;
+        background: #282828;
+        padding: 20px 0px 30px 0px; 
+    }
+
+    #logoYbike2{
+        padding-left: 0;
+    }
+}
+
+
+
+

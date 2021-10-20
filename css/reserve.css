@@ -1,0 +1,191 @@
+.container{
+    margin: 0px 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.explaination{
+    width: 50%;
+    margin: 50px auto;
+    border: 2px solid black;
+    padding: 20px;
+}
+
+.explaination p,h4,h5{
+    padding: 2px;
+    cursor: pointer;
+    
+}
+
+.explaination p:hover,h4:hover,h5:hover{
+    font-style: italic;
+    font-size: 20px;
+    color: #f88702;
+}
+
+
+h4,h5{
+    text-align: center;
+}
+
+.container form{
+    border: 1px solid black;
+    width: 50%;
+    margin: 100px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background: #333333;
+    color: white;
+    font-size: 20px;
+}
+
+.container form:hover{
+    background-image: url(../asset/wallpaper1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+h2{ 
+    text-align: center;
+}
+
+.input-div{
+    display: flex;
+    margin: 15px 0;
+}
+
+.label{
+    width: 30%;
+}
+
+.radio{
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+
+input[type=text],input[type=email],input[type=tel],input[type=number],select,textarea{
+    width: 100%;
+    box-sizing: border-box;
+    resize: none; 
+}
+
+textarea{
+    height: 100px;
+}
+
+button{
+    width: 50%;
+    margin: auto;
+    font-size: 24px;
+    background: #f88702;
+    border: 1px solid #f88702;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover{
+    background: grey;
+    border: 1px solid grey;
+}
+
+#error{
+    color: red;
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .container form{
+        font-size: 13px;
+    }
+
+    .container form:hover{
+        background-size: 100% 100%;
+    }
+
+    button{
+        font-size: 17px;
+    }
+    input[type=text],input[type=email],input[type=tel],input[type=number],select,textarea{
+        width: 100%;
+    }
+  }
+  
+  @media only screen and (max-width: 801px) {
+    .container form{
+        font-size: 10px;
+    }
+
+    .container form:hover{
+        background-size: 100% 100%;
+    }
+
+    button{
+        font-size: 17px;
+    }
+    input[type=text],input[type=email],input[type=tel],input[type=number],select,textarea{
+        width: 80%;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .container form{
+        font-size: 13px;
+    }
+
+    .container form:hover{
+        background-size: 100% 100%;
+    }
+
+    button{
+        font-size: 17px;
+    }
+    input[type=text],input[type=email],input[type=tel],input[type=number],select,textarea{
+        width: 80%;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .container form{
+        font-size: 10px;
+    }
+
+    .container form:hover{
+        background-size: 100% 100%;
+    }
+
+    button{
+        font-size: 17px;
+    }
+    input[type=text],input[type=email],input[type=tel],input[type=number],select,textarea{
+        width: 80%;
+    }
+  }
+  
+  @media only screen and (max-width: 320px) {
+    .container form{
+        font-size: 6px;
+    }
+
+    .container form:hover{
+        background-size: 100% 100%;
+    }
+
+    button{
+        font-size: 17px;
+    }
+    input[type=text],input[type=email],input[type=tel],input[type=number],select,textarea{
+        width: 80%;
+    }
+  }
+  
+  
+  
+  
+  
